@@ -11,6 +11,8 @@ from django.contrib.auth import authenticate, login, logout
 class PostListView(ListView):
      model = Post
 
+
+
 class PostDetailView(DetailView):
      model = Post
 
@@ -115,3 +117,7 @@ def registro(request):
 def logout_vista(request):
 	logout(request)
 	return redirect('/')
+
+
+def objetivo(request):
+    return render(request, 'posts/objetivo.html')

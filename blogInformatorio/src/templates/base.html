@@ -16,6 +16,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/aed1ad2a05.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static '/style.css' %}">
+    <link rel="icon" sizes="80x80" href="{% static 'img/logo.png' %}">
     <title>Blog</title>
 
     <!-- Favicons -->
@@ -34,12 +35,15 @@
    
 
     <header>
+        <div id=logo>
+            <img width="150px" height="150px" src="{% static '/img/logo.png' %}" alt="logo">
+        </div>
+
         <!--aqui menu-->
     <div id="menu">
         <ul>
             <li><a href="{% url 'list' %}" class="enlace">Inicio</a></li>
-            <li><a href="#" class="enlace">ipsum</a></li>
-            <li><a href="#" class="enlace">dolor</a></li>
+            <li><a href="{% url 'objetivo' %}" class="enlace">Objetivos</a></li>
             <li><a href="{% url 'registro' %}" class="enlace">registro</a></li>
             <li><a href="{% url 'login' %}" class="enlace">Login</a></li>
         </ul>
