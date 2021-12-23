@@ -1,8 +1,11 @@
 from django.db.models import fields
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, PostView, Like, Comment
 from .forms import PostForm, CommentForm
+from .forms import RegistroFormulario, UsuarioLoginFormulario
+from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 class PostListView(ListView):
      model = Post
@@ -68,3 +71,44 @@ def like(request, slug):
           return redirect('detail', slug=slug)
      Like.objects.create(user=request.user,post=post)
      return redirect('detail',slug=slug)
+
+def loginView(request):
+	titulo = 'login'
+	form = UsuarioLoginFormulario(request.POST or None)
+	if form.is_valid():
+		username = form.cleaned_data.get("username")
+		password = form.cleaned_data.get("password")
+		usuario = authenticate(username=username, password=password)
+		login(request, usuario)
+		return redirect('PostCreateView')
+
+	context = {
+		'form':form,
+		'titulo':titulo
+	}
+
+	return render(request, 'login.html', context)
+
+def registro(request):
+
+	titulo = 'Crear una Cuenta'
+	if request.method == 'POST':
+		form = RegistroFormulario(request.POST)
+		if form.is_valid():
+			form.save()
+			return redirect('login')
+	else:
+		form = RegistroFormulario()
+
+	context = {
+
+		'form':form,
+		'titulo': titulo
+
+	}
+
+	return render(request, 'registro.html', context)
+
+def logout_vista(request):
+	logout(request)
+	return redirect('/')

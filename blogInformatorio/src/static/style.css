@@ -4,18 +4,18 @@
 }
 
 body{
-    background: rgb(29, 29, 29);
+    background: white;
     font-family: Calibri;
 
 }
 
 header{
-    background: #050505;
+    background: #ceb0c9;
     width: 100%;
     height: 100px;
-    box-shadow: 0px 0px 30px #2e0000;
+    box-shadow: 0px 0px 30px #ceacac;
     border-bottom-style: solid;
-    border-bottom-color: #490000;
+    border-bottom-color: #bb8b8b;
     border-bottom-width: 5px;
 }
 
@@ -37,24 +37,25 @@ header{
 }
 
 #menu{
-    width: 60%;
-    height: 40px;
+    width: auto;
+    height: 60px;
     float: right;
-    border: 0px solid red;
-    margin-top: 30px;
+    border: 0px solid #00579e;
+    margin-top: 80px;
 }
 
 #menu ul li{
     list-style: none;
     display: inline-block;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #menu ul li .enlace{
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
+    padding: 40px;
+    font-size: 25px;
 }
 
 #menu ul li .enlace:hover{
@@ -85,10 +86,10 @@ header{
     width: 97%;
     height: auto; overflow: hidden;
     padding: 7px;
-    background: #2e0000;
+    background: #8b5656;
     border-left-style: solid;
     border-left-width: 5px;
-    border-left-color: #490000;
+    border-left-color: #b69fb3;
     border-radius: 10px;
     margin-bottom: 25px; /* espacio entre posts */
 }
@@ -152,7 +153,7 @@ header{
 
 #publicaciones .enlace-paginacion{
     text-decoration: none;
-    color: rgb(173, 7, 165);
+    color: rgb(110, 82, 109);
 }
 
 #publicaciones .enlace-paginacion:hover{
@@ -200,7 +201,7 @@ form{
 .encabezado-sidebar{
     width: 100%;
     height: 35px;
-    background: #490000;
+    background: #be8f8f;
     text-align: center;
     color: #fff;
     font-size: 25px;
@@ -227,8 +228,8 @@ footer{
     background: #050505;
     width: 100%;
     height: auto;
-    box-shadow: 0px 15px 30px #2e0000;
+    box-shadow: 0px 15px 30px #af7e7e;
     border-top-style: solid;
-    border-top-color: #490000;
+    border-top-color: #a78080;
     border-top-width: 5px;
 }
