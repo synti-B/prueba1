@@ -36,7 +36,7 @@ header{
     margin-top: 30px;
 }
 
-#menu{
+.menu{
     width: auto;
     height: 60px;
     float: right;
@@ -197,9 +197,7 @@ form{
     padding: 10px;
     border-radius: 10px;
 }
-.post-obj{
-    text-align: left;
-}
+
 .encabezado-sidebar{
     width: 100%;
     height: 35px;
@@ -234,4 +232,75 @@ footer{
     border-top-style: solid;
     border-top-color: #a78080;
     border-top-width: 5px;
+}
+
+
+
+.box{
+   height: 400px;
+   text-align: center;
+   padding-top: 30px;
+   border-radius: 30px;
+   background-color: #ccc;
+}
+
+.iniciar{
+    color: black;
+}
+
+.log{
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reg{
+    margin-bottom: 5px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+.tituloreg{
+    text-align: center;
+}
+
+.box2{
+   height: 400px;
+  
+   padding-top: 30px;
+   border-radius: 30px;
+   background-color: #ccc;
+   width: 400px;
+   margin-left: 400px;
+}
+
+.log2{
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.reg2{
+    margin-bottom: 5px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container {
+    background-color: #ccc;
+    width: 400px;
+    margin-left: 400px;
+    margin-top: 100px;
+    border: solid, 2px;
+    justify-content: center;
+    border-radius: 5px;
 }
