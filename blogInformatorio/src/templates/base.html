@@ -2,6 +2,8 @@
 <!doctype html>
 <html lang="en">
 
+   
+
 <head>
 
     <meta charset="utf-8">
@@ -44,10 +46,11 @@
     </div>
       
     </header>
-
+    
+    {% block content %}
+    
     <main>
-        {% block content %}
-        {% endblock content %}
+      
 
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
@@ -306,5 +309,7 @@
 
 
 </body>
+
+{% endblock content %}
 
 </html>
