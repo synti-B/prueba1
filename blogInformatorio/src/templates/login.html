@@ -11,8 +11,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-8 col-md-6 col-lg-4 offset-sm-2 offset-md-3 offset-lg-4">
-            <div class="card">
-                
+            
                 <form class="box" method="POST">
                    
                     <h2 class="iniciar">Iniciar Sesión</h2>
@@ -20,12 +19,12 @@
                          {% csrf_token %}
                          {{form.as_p}}
                 
-                     <input type="submit" name="ingresar" value="Entrar" class="log" /> <br>
-                     <p class='reg' > Si no tienes cuenta </p>
-                     <a href="{% url 'registro' %}" class="btn  btn-secondary" ></i>Crea una cuenta</a>
+                     <input type="submit" name="ingresar" value="Entrar" class="log2" /> <br>
+                     <p class='iniciar' > Si no tienes cuenta </p>
+                     <a href="{% url 'registro' %}" class="reg2" ></i>Crea una cuenta</a>
 
                 </form>
-            </div>
+            
         </div>
     </div>
 </div>

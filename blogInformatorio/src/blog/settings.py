@@ -130,3 +130,5 @@ AUTHENTICATION_BACKENDS = [
 ]
 SITE_ID = 1
 AUTH_USER_MODEL = 'posts.User'
+LOGIN_URL = '/login'
+LOGIN_REDIRECT_URL = '/create'

@@ -6,6 +6,7 @@ from .models import Post, PostView, Like, Comment
 from .forms import PostForm, CommentForm
 from .forms import RegistroFormulario, UsuarioLoginFormulario
 from django.contrib.auth import authenticate, login, logout
+
 # Create your views here.
 class PostListView(ListView):
      model = Post
@@ -55,9 +56,11 @@ class PostUpdateView(UpdateView):
      def get_context_data(self, **kwargs):
          context = super().get_context_data(**kwargs)
          context.update({
-              'view_type':'update'
+              'view_type':'Actualizar'              
          })
+         
          return context
+
     
 class PostDeleteView(DeleteView):
      model = Post
@@ -80,7 +83,7 @@ def loginView(request):
 		password = form.cleaned_data.get("password")
 		usuario = authenticate(username=username, password=password)
 		login(request, usuario)
-		return redirect('PostCreateView')
+		return redirect('create')
 
 	context = {
 		'form':form,

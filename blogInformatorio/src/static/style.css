@@ -237,19 +237,60 @@ footer{
 
 
 .box{
-   height: 350px;
+   height: 400px;
    text-align: center;
-   padding-top: 15px;
+   padding-top: 30px;
    border-radius: 30px;
-   background-color: #00579e;
+   background-color: #ccc;
 }
 
 .iniciar{
-    color: white;
+    color: black;
 }
 
 .log{
     background-color: rebeccapurple;
     color: white;
+    border-radius: 5px;
+    text-align: center;
 }
 
+.reg{
+    margin-bottom: 5px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+.tituloreg{
+    text-align: center;
+}
+
+.box2{
+   height: 400px;
+  
+   padding-top: 30px;
+   border-radius: 30px;
+   background-color: #ccc;
+   width: 400px;
+   margin-left: 400px;
+}
+
+.log2{
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.reg2{
+    margin-bottom: 5px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
